@@ -23,14 +23,17 @@ import java.util.List;
  */
 public class EmotionLayout extends LinearLayout implements View.OnClickListener {
 
+     // 默认表情
     public static final int EMOJI_COLUMNS = 7;
     public static final int EMOJI_ROWS = 3;
     public static final int EMOJI_PER_PAGE = EMOJI_COLUMNS * EMOJI_ROWS - 1;//最后一个是删除键
 
+     // 自定义表情
     public static final int STICKER_COLUMNS = 4;
     public static final int STICKER_ROWS = 2;
     public static final int STICKER_PER_PAGE = STICKER_COLUMNS * STICKER_ROWS;
 
+     // 测量的宽高
     private int mMeasuredWidth;
     private int mMeasuredHeight;
 
