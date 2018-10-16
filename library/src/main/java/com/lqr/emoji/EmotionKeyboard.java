@@ -56,6 +56,7 @@ public class EmotionKeyboard {
     public EmotionKeyboard bindToEditText(EditText editText) {
         mEditText = editText;
         mEditText.requestFocus();
+         // 手指抬起 就隐藏 表情布局 并 显示软件盘
         mEditText.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
