@@ -63,9 +63,10 @@ public class SimpleSessionActivity extends AppCompatActivity {
         mElEmotion.setEmotionSelectedListener(new IEmotionSelectedListener() {
             @Override
             public void onEmojiSelected(String key) {
-
+                Toast.makeText(getApplicationContext(), key + "==" + key, Toast.LENGTH_SHORT).show();
             }
 
+             // 自定义表情
             @Override
             public void onStickerSelected(String categoryName, String stickerName, String stickerBitmapPath) {
                 String stickerPath = stickerBitmapPath;
