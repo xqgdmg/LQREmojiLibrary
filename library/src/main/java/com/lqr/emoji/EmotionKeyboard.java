@@ -200,6 +200,7 @@ public class EmotionKeyboard {
 
     /**
      * 锁定内容高度，防止跳闪
+     * 原理：weight 失效，不会自动变化，使用原来的高度
      */
     private void lockContentHeight() {
         LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) mContentView.getLayoutParams();
@@ -209,6 +210,7 @@ public class EmotionKeyboard {
 
     /**
      * 释放被锁定的内容高度
+     * 原理：恢复weight，让它充满剩余高度，即自动变化
      */
     public void unlockContentHeightDelayed() {
         mEditText.postDelayed(new Runnable() {
